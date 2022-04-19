@@ -5,46 +5,57 @@
 }
 body {
     font-family: "Fredoka", sans-serif;
-    font-size: 16px;
+    font-size: 13px;
   }
   
 .container {
     width: 100%;
-    max-width: 750px;
+    max-width: 960px;
     min-width: 500px;
     min-height: 350px;
-    margin-left: 0;
-    margin-right: 0;
+    margin:0 auto;
     padding: 2em 1em;
   }
 .section-header{
      background-color: orangered;
      height: 50px;
   }
-  .container-header{
+.container-header{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
   }
 
-.container-relative{
+.container-header-relative{
     position: relative;
   }
-  .col-header-left{
+.col-header-left{
     position: absolute;
     left: 220px;
     top: 10px;
     color: white;
     font-weight: bold;
   }
+ .container-main{
+     display: flex;
+     gap: .5rem;
+ }
+ .col-main{
+     flex-basis: calc(100% / 3);
+     max-width: 460px;
+     margin: auto;
+ }
+ .product{
+     width: 100%;
+ } 
   .header-img{
     position: absolute;
     top: 10px;
     width: 140px;
     height: 30px;
   }
-  .col-header-right{
+ .col-header-right{
     position: absolute;
     right: 220px;
     top: 10px;
@@ -52,10 +63,9 @@ body {
   }
 .d-flex{
     display: flex;
-    gap: .5rem;
 }
 .container-img{
-  
+    position: relative;
 }
 .color-red{
     color: red;
@@ -63,4 +73,57 @@ body {
 }
 .old-price{
     text-decoration: line-through;
+}
+.size-img{
+    width: 100%;
+}
+.small-text{
+    font-size: 9px;
+}
+.hearth-image{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: white;
+    padding: 8px;
+}
+.product-discount{
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+.product-sustenability{
+    position:absolute;
+    bottom:70px;
+    left:33px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+.last-product{
+    position: absolute;
+    bottom: 70px;
+    left:0;
+}
+.container-footer{
+    background-color: black;
+    min-height: 100px;
+    color: white;
+    height: 200px;
+}
+.info-footer{
+    font-weight: bold;
+    padding: 10px;
+}
+.position-footer{
+    position: absolute;
+    bottom: 10px;
+    right: 800px;
+    padding: 10px;
+}
+.padding-footer-logo{
+    padding:5px;
 }
