@@ -46,14 +46,15 @@ body {
      max-width: 460px;
      margin: auto;
  }
-.container-img .product-img-hover{
+ .container-img .product-img-hover{
      display: none;
+     position: absolute;
+     top:0;
+     left:0;
+     z-index:99;
  }
 .container-img:hover .product-img-hover{
-    display: block;
-}
-.container-img:hover .product-img-default{
-    display: none;
+    display: inline;
 }
 .header-img{
     position: absolute;
@@ -61,7 +62,7 @@ body {
     width: 140px;
     height: 30px;
   }
- .col-header-right{
+.col-header-right{
     position: absolute;
     right: 220px;
     top: 10px;
@@ -72,6 +73,9 @@ body {
 }
 .container-img{
     position: relative;
+    width: 290px;
+    height: 490px;
+    display: inline-block;
 }
 .color-red{
     color: red;
